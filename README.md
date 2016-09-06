@@ -2,6 +2,8 @@
 
 Quickly search for videos on YouTube
 
+![Screenshot](screenshot_md.png)
+
 ## Installation
 
 Run npm to install all the dependencies
