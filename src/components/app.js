@@ -39,7 +39,7 @@ class App extends Component {
 
     return (
       <div>
-        <h1 className="text-xs-center text-primary">Videos For Me!</h1>
+        <h1 className="text-center text-primary">Videos For Me!</h1>
         <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList
