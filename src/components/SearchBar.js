@@ -10,12 +10,15 @@ class SearchBar extends Component {
   }
   render() {
     return (
-      <div className="search-bar">
-        <input
-          placeholder="Look up videos"
-          value={this.state.term}
-          onChange={event => this.onInputChange(event.target.value)}
-        />
+      <div className="row justify-content-center search-bar">
+        <div className="col-9">
+          <input
+            className="form-control"
+            placeholder="Look up videos"
+            value={this.state.term}
+            onChange={event => this.onInputChange(event.target.value)}
+          />
+        </div>
       </div>
     );
   }
