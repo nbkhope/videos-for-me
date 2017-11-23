@@ -41,11 +41,13 @@ class App extends Component {
       <div>
         <h1 className="text-center text-primary">Videos For Me!</h1>
         <SearchBar onSearchTermChange={videoSearch} />
-        <VideoDetail video={this.state.selectedVideo}/>
-        <VideoList
-          onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-          videos={this.state.videos}
-        />
+        <div className="row">
+          <VideoDetail video={this.state.selectedVideo}/>
+          <VideoList
+            onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+            videos={this.state.videos}
+          />
+        </div>
       </div>
     );
   }
