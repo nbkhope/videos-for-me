@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 import _ from 'lodash';
 
-import SearchBar from './search_bar';
-import VideoList from './video_list';
-import VideoDetail from './video_detail';
+import SearchBar from './SearchBar';
+import VideoList from './VideoList';
+import VideoDetail from './VideoDetail';
 
 // YouTube Data API v3
 const API_KEY = 'AIzaSyA2U3katptmBAJvhGnTOVO5h6suwqKL1kg';
