@@ -5,15 +5,15 @@
   "main": "index.js",
   "repository": "https://github.com/nbkhope/videos-for-me",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start": "webpack-dev-server",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
   "author": "nbkhope",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-1": "^6.1.18",
@@ -23,8 +23,8 @@
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.5"
   },
   "dependencies": {
     "lodash": "^3.10.1",
