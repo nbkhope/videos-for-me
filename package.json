@@ -6,7 +6,7 @@
   "repository": "https://github.com/nbkhope/videos-for-me",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test": "jest",
     "test:watch": "npm run test -- --watch"
   },
   "author": "nbkhope",
@@ -17,11 +17,9 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-1": "^6.1.18",
-    "chai": "^3.5.0",
-    "chai-jquery": "^2.0.0",
-    "jquery": "^2.2.1",
+    "enzyme": "^2.9.1",
+    "jest": "^21.2.1",
     "jsdom": "^8.1.0",
-    "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.5"
