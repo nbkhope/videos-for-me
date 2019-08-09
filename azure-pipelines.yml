@@ -30,12 +30,9 @@ steps:
   displayName: 'Copy the environment file'
 
 - script: |
-    ls -la
     npm test
   displayName: 'Run the tests'
 
 - script: |
-    ls -al
     npm run build
-    ls -la
   displayName: 'Build the application'
