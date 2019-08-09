@@ -29,5 +29,6 @@ steps:
   displayName: 'Run the tests'
 
 - script: |
+    ls -al
     npm run build
   displayName: 'Build the application'
