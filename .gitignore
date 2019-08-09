@@ -1,6 +1,8 @@
+.DS_Store
 /node_modules
 bundle.js
 npm-debug.log
+build
 
 # IntelliJ
 *.iml
