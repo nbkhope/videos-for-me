@@ -20,9 +20,14 @@ steps:
   displayName: 'Install NPM dependencies'
 
 - task: DownloadSecureFile@1
+  name: environmentFile
   inputs:
     secureFile: '.env'
-  displayName: 'Load environment variables'
+  displayName: 'Download the secure environment file'
+  
+- script: |
+    cp $(environmentFile.secureFilePath) .
+  displayName: 'Copy the environment file'
 
 - script: |
     npm test
