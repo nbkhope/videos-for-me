@@ -22,9 +22,14 @@ steps:
 - task: DownloadSecureFile@1
   inputs:
     secureFile: '.env'
-  displayName: 'Load environment variables'
+  displayName: 'Download the secure environment file'
+  
+- script: |
+    cp $(caCertificate.secureFilePath) .
+   displayName: 'Copy the environment file'
 
 - script: |
+    ls -la
     npm test
   displayName: 'Run the tests'
 
