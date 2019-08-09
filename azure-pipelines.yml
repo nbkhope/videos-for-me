@@ -16,6 +16,10 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    echo $(YOUTUBE_API_KEY) > .env
+  displayName: 'Load environment variables'
+
+- script: |
     npm install
     npm test
   displayName: 'npm install and build'
