@@ -7,7 +7,7 @@ import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
 
 // YouTube Data API v3
-const API_KEY = 'AIzaSyA2U3katptmBAJvhGnTOVO5h6suwqKL1kg';
+const API_KEY = process.env.YOUTUBE_API_KEY;
 
 class App extends Component {
   constructor(props) {
