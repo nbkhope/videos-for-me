@@ -5,6 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/nbkhope/videos-for-me",
   "scripts": {
+    "build": "webpack && cp public/index.html build/",
     "start": "webpack-dev-server",
     "test": "jest",
     "test:watch": "npm run test -- --watch"

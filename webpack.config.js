@@ -6,7 +6,7 @@ module.exports = {
     main: './src/index.js'
   },
   output: {
-    path: path.resolve(__dirname),
+    path: path.resolve(__dirname, 'build'),
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -26,7 +26,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './public'
   },
   plugins: [
     new DotenvWebpack()
