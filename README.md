@@ -1,5 +1,7 @@
 # Videos For Me
 
+[![Build Status](https://dev.azure.com/nbkhope/videos-for-me/_apis/build/status/nbkhope.videos-for-me?branchName=master)](https://dev.azure.com/nbkhope/videos-for-me/_build/latest?definitionId=1&branchName=master)
+
 Quickly search for videos on YouTube
 
 ![Screenshot](screenshot_md.png)
