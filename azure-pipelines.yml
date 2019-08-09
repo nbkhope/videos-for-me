@@ -27,7 +27,7 @@ steps:
   
 - script: |
     cp $(environmentFile.secureFilePath) .
-   displayName: 'Copy the environment file'
+  displayName: 'Copy the environment file'
 
 - script: |
     ls -la
