@@ -16,11 +16,18 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    # Note this is not secure! Only use for testing
-    echo $(YOUTUBE_API_KEY) > .env
+    npm install
+  displayName: 'Install NPM dependencies'
+
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: '.env'
   displayName: 'Load environment variables'
 
 - script: |
-    npm install
     npm test
-  displayName: 'npm install and build'
+  displayName: 'Run the tests'
+
+- script: |
+    npm run build
+  displayName: 'Build the application'
