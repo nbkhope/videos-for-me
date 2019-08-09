@@ -36,3 +36,9 @@ steps:
 - script: |
     npm run build
   displayName: 'Build the application'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'videos-for-me-drop'
+    publishLocation: 'Container'
